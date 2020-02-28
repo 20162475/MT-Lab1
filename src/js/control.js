@@ -16,3 +16,12 @@ document.getElementById("button-url2").addEventListener("click", function() {
     player.src({src: source});
 });
 
+document.getElementById("button-shuffle").addEventListener("click", function() { 
+    const source = []
+    source.push(document.getElementsByName('url1')[0].value)
+    source.push(document.getElementsByName('url2')[0].value)
+
+    const rand = Math.floor(Math.random() * source.length)
+
+    player.src({src: source[rand]});
+});
