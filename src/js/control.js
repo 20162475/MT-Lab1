@@ -6,5 +6,13 @@ document.getElementById("button-stop").addEventListener("click", function() { pl
 document.getElementById("button-jump5f").addEventListener("click", function() { player.currentTime(player.currentTime() + 5); });
 document.getElementById("button-jump5b").addEventListener("click", function() { player.currentTime(player.currentTime() - 5); });
 
+document.getElementById("button-url1").addEventListener("click", function() { 
+    const source = document.getElementsByName('url1')[0].value
+    player.src({src: source});
+});
 
+document.getElementById("button-url2").addEventListener("click", function() { 
+    const source = document.getElementsByName('url2')[0].value
+    player.src({src: source});
+});
 
