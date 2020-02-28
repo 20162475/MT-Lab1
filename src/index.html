@@ -27,20 +27,26 @@
   
   </video>
 
-  <script>
-    var player = videojs('my-player');
-  </script>
 
-	<button type="button">Play</button>
-	<button type="button">Pause</button>
-	<button type="button">Stop</button>
-	<button type="button">Jump to 5 sec forward</button>
-	<button type="button">Jump to 5 sec backwards</button>	
+
+	<button type="button" id="button-play">Play</button>
+	<button type="button" id="button-pause">Pause</button>
+	<button type="button" id="button-stop">Stop</button>
+	<button type="button" id="button-jump5f">Jump to 5 sec forward</button>
+	<button type="button" id="button-jump5b">Jump to 5 sec backwards</button>	
 	
 	<p>Playlist</p>
 	
-	<input type="text" name="url1" size="100" value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"><button type="button">Load</button><br>
-	<input type="text" name="url2" size="100" value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"><button type="button">Load</button><br>
-	<button type="button">Shuffle</button>
+  <input type="text" name="url1" size="100" value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8">
+  <button type="button">Load</button>
+  <br>
+
+  <input type="text" name="url2" size="100" value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8">
+  <button type="button">Load</button>
+  <br>
+  
+  <button type="button" id="button-shuffle">Shuffle</button>
+
+  <script src="js/control.js"></script> 
 </body>
 </html>
